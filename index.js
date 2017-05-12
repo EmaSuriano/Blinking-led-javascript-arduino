@@ -12,7 +12,7 @@ board.on("ready", function () {
 
   setInterval(toggleLed, 1000); //call every second!
 
-  const toggleLed = () => {
+  function toggleLed() {
     toggleState = !toggleState;
     return toggleState ? led.on() : led.off();
   }
